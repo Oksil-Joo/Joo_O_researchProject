@@ -1,0 +1,33 @@
+.DesaudioCon1 {
+    width: 914px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.DesaudioCon1 h2 {
+    font-size: 24px;
+}
+
+.folklist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+}
+.audioFolk {
+    width: 170px;
+    margin: 0px;
+    padding-right: 20px;
+}
+/* video */
+.videoFolk {
+    width: 170px;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.videoFolk h3 {
+   text-align: right;
+}
