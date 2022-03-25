@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    box-sizing: border-box;
+}
+
+.hidden { display: none;}
+
+a {
+    color: violet;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: grab;
+}
+
+body { 
+    font-size: 16px; 
+    background-color: black; 
+    color: yellow; 
+}
