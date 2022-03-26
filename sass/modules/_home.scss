@@ -1,0 +1,76 @@
+
+.mainCon {
+    max-width: 914px;
+    margin: 0 auto;
+}
+.DesCon1 {
+    width: 914px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.mainDes1 {
+    background-image: url(../images/Interesting.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 49px;
+    width: 188px;
+}
+.maintitle2 {
+    background-image: url(../images/mellow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 49px;
+    width: 131px;
+}
+
+.mainDes1 h2 {
+font-size: 50px;
+padding-top: 25px;
+padding-left: 77px;
+}
+
+.maintitle2 h2 {
+    font-size: 50px;
+    padding-top: 25px;
+    padding-left: 77px;
+    }
+.mainDes2 {
+    padding-top: 40px;
+    padding-left: 77px;
+}
+.btn {
+    background-color: #FFC400; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+  }
+
+  .btn:hover {
+    background-color: black; /* Green */
+
+  }
+
+.mainDes2 p {
+    font-size: 24px;
+    color: #5C5C5C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mainDesBox1 {
+    padding-top: 25px;
+    padding-left: 77px;
+}
+
+.mainVideoImg {
+     width: 447px;
+     height: 500px;
+}

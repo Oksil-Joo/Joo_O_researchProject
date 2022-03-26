@@ -15,14 +15,14 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/index.html'));
 })
 
-router.get('/oksil', (req, res) => {
+router.get('/audio', (req, res) => {
     // res.end(`this is joo's page`);
-    res.sendFile(path.join(__dirname, '../views/oksil.html'));
+    res.sendFile(path.join(__dirname, '../views/audio.html'));
 })
 
-router.get('/maria', (req, res) => {
+router.get('/video', (req, res) => {
     // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/maria.html'));
+    res.sendFile(path.join(__dirname, '../views/video.html'));
 })
 
 router.use((req, res) => {

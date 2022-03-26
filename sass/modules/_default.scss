@@ -8,15 +8,108 @@
 
 .hidden { display: none;}
 
-a {
-    color: violet;
-    font-size: 2em;
-    text-decoration: none;
-    cursor: grab;
+img,embed, object, video {
+    max-width: 100%;
 }
 
-body { 
-    font-size: 16px; 
-    background-color: black; 
-    color: yellow; 
+*, *::before, *::after {
+    box-sizing: inherit;
 }
+.navCon a {
+    text-decoration: none;
+    transition:all 0.5s linear;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+.navCon a:hover {
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px 10px;
+    transition:all 0.5s linear;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Krungthep", sans-serif;
+    font-size: 16px;
+    background-color: #B1B1B1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Con {
+    background-color: white;
+    border-radius: 100px;
+    max-width: 1100px;
+    border-width: none;
+    margin-bottom: 50px;
+}
+
+.Topimg{
+    background-image: url(../images/images/hometop.png);
+    background-repeat: no-repeat;
+    height: 354px;
+    border-radius: 100px 100px 200px 15px;
+}
+
+.TopAudioimg{
+    background-image: url(../images/images/audio_top.png);
+    background-repeat: no-repeat;
+    height: 354px;
+    border-radius: 100px 100px 200px 15px;
+}
+
+.TopVideoimg{
+    background-image: url(../images/images/videotop.png);
+    background-repeat: no-repeat;
+    height: 354px;
+    border-radius: 100px 100px 200px 15px;
+}
+
+.TopStoryimg{
+    background-image: url(../images/arrival.jpg);
+    background-repeat: no-repeat;
+    height: 354px;
+    border-radius: 100px 100px 200px 15px;
+}
+
+.TopBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logoCon {
+    width: 585px;
+    margin-left: 93px;
+    padding-top: 40px;
+}
+
+.TopRCon {
+    width: 422px;
+    color: white;
+    padding-left: 60px;
+    background-color: black;
+    height: 354px;
+    border-radius: 0px 100px 200px 0px;
+}
+
+nav ul {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.TopDes {
+    padding-top: 66px;
+    font-size: 30px;
+    line-height: 50px;
+    padding-right: 50px;
+}
+

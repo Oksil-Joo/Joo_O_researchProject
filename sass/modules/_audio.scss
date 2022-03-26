@@ -1,0 +1,40 @@
+.DesaudioCon1 {
+    width: 914px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.DesaudioCon1 h2 {
+    font-size: 24px;
+}
+
+.folklist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+}
+.audioFolk {
+    width: 170px;
+    margin: 0px;
+    margin-right: 20px;
+    background-color: black;
+    padding: 0px;
+    border-radius: 15px 50px;
+}
+
+.audioFolk {
+    color: white;
+}
+.audioFolk h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.audioFolk p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0px 10px 50px 10px;
+}
