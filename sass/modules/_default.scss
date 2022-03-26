@@ -17,18 +17,18 @@ img,embed, object, video {
 }
 .navCon a {
     text-decoration: none;
-    transition:all 1s linear;
+    transition:all 0.5s linear;
     color: white;
     padding: 20px 10px;
     border-radius: 15px;
 }
 
 .navCon a:hover {
-    color: #FFC400;
+    color: black;
     border-radius: 15px;
     background-color: white;
     padding: 20px 10px;
-    transition:all 1s linear;
+    transition:all 0.5s linear;
 }
 
 body {
@@ -47,24 +47,25 @@ body {
     border-radius: 100px;
     max-width: 1100px;
     border-width: none;
+    margin-bottom: 50px;
 }
 
 .Topimg{
-    background-image: url(../images/hometop.png);
+    background-image: url(../images/images/hometop.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
 }
 
 .TopAudioimg{
-    background-image: url(../images/audio_top.png);
+    background-image: url(../images/images/audio_top.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
 }
 
 .TopVideoimg{
-    background-image: url(../images/videotop.png);
+    background-image: url(../images/images/videotop.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
@@ -91,7 +92,6 @@ body {
 
 .TopRCon {
     width: 422px;
-    padding-top: 40px;
     color: white;
     padding-left: 60px;
     background-color: black;
@@ -103,6 +103,7 @@ nav ul {
     display: inline-block;
     padding-right: 20px;
     font-size: 20px;
+    padding-top: 40px;
 }
 
 .TopDes {

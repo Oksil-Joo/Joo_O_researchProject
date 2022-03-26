@@ -8,9 +8,17 @@
     "start": "node app",
     "dev": "nodemon app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oksil-Joo/Joo_O_researchProject.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oksil-Joo/Joo_O_researchProject.git"
+  },
+  "homepage": "https://github.com/Oksil-Joo/Joo_O_researchProject.git",
   "dependencies": {
     "express": "^4.17.3",
     "gulp": "^4.0.2"
