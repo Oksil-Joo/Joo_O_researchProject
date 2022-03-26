@@ -42,7 +42,14 @@
                     <h2>Top10</h2>
 
                <div class="folklist">
-                    <div class="videoFolk">
+                   <thumb
+                    v-on:showdata="popLightBox"
+                    v-for="item in researchData"
+                    :piece="item"
+                    :key="item.id"
+                   >
+                   </thumb>
+                    <!-- <div class="videoFolk">
                         <img src="images/images/arrival.png" alt="awol">
                         <h3>Ukulele</h3>
                     </div>
@@ -61,8 +68,14 @@
                    <div class="videoFolk">
                         <img src="images/images/arrival.png" alt="awol">                        
                         <h3>Ukulele</h3>
-                    </div>
+                    </div> -->
                 </div>
+                <lightbox class="Lightbox"
+                v-on:closelb="closeLightBox" 
+                class="lightbox" 
+                :class='{ visible: isVisible }' 
+                :piece="currentResearchItem">
+            </lightbox>
             </div>
 
             <h1 class="hidden">DRAMAS</h1>
