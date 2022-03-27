@@ -1,6 +1,6 @@
-import { getData } from "./components/TheDataMiner.js";
-import TheThumbnailComponent from "./components/TheThumbNail.js";
-import TheLightboxComponent from "./components/TheLightboxComponent.js";
+import { getData } from "./component/TheDataMiner.js";
+import TheThumbnailComponent from "./component/TheThumbNail.js";
+import TheLightboxComponent from "./component/TheLightboxComponent.js";
 
 (() => {
 
@@ -11,7 +11,7 @@ import TheLightboxComponent from "./components/TheLightboxComponent.js";
         },
 
         data: {
-            newProfData: [],
+            researchData: [],
             message: "hello from Vue",
             isVisible: false,
             currentResearchItem: {}
