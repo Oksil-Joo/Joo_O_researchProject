@@ -1,7 +1,7 @@
 
 function getData(params, cb) {
     
-    let baseURL = "./includes/index.php";
+    let baseURL = "./public/includes/index.php";
 
     if (params) {
         let keys = Object.keys(params); 
