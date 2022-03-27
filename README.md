@@ -1,6 +1,6 @@
-# Mini Cooper Makes and Models
+# A/V Accessibility Research Project
 ### Concept
-Create a car web page based on class builds using SASS, Vue, AJAX, databases, and Fetch. If you click on one of the three-car models, you will see additional data for that model.  In addition, you can use Vue to navigate the app using components and AJAX.
+Use SAS, Vue, AJAX, databases, and Fetch to create multimedia pages with video and audio in your class build. Click on either video or audio to play the video. You can also view data using the node app and the site using the Heroku app.
 
 
 ### Installation
@@ -12,8 +12,7 @@ Create a car web page based on class builds using SASS, Vue, AJAX, databases, an
 6. [Vue.js](https://vuejs.org/)
 7. [postman](https://www.postman.com/)
 
-### Future Plans
-I will upload and modify constantly my work to be the perfect Mini App.
+## RESEARCH DOCUMENT
 
 ## MIT Lisense
 
