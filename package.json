@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/Oksil-Joo/Joo_O_researchProject.git",
   "dependencies": {
-    "express": "^4.17.3",
-    "gulp": "^4.0.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-dart-sass": "^1.0.2",
     "gulp-imagemin": "^8.0.0",
