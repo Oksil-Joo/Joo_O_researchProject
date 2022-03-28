@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #Con {
@@ -51,21 +52,21 @@ body {
 }
 
 .Topimg{
-    background-image: url(../images/images/hometop.png);
+    background-image: url(../images/hometop.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
 }
 
 .TopAudioimg{
-    background-image: url(../images/images/audio_top.png);
+    background-image: url(../images/audio_top.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
 }
 
 .TopVideoimg{
-    background-image: url(../images/images/videotop.png);
+    background-image: url(../images/videotop.png);
     background-repeat: no-repeat;
     height: 354px;
     border-radius: 100px 100px 200px 15px;
