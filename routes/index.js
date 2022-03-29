@@ -28,11 +28,29 @@ router.get('/videoView', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/videoView.html'));
 })
 
-router.get('/videoStreaming', (req, res) => {
+router.get('/videoStreaming1', (req, res) => {
     // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming.html'));
+    res.sendFile(path.join(__dirname, '../views/videostreaming1.html'));
 })
 
+router.get('/videoStreaming2', (req, res) => {
+    // res.end(`this is joe's page`);
+    res.sendFile(path.join(__dirname, '../views/videostreaming2.html'));
+})
+
+router.get('/videoStreaming3', (req, res) => {
+    // res.end(`this is joe's page`);
+    res.sendFile(path.join(__dirname, '../views/videostreaming3.html'));
+})
+
+router.get('/videoStreaming4', (req, res) => {
+    // res.end(`this is joe's page`);
+    res.sendFile(path.join(__dirname, '../views/videostreaming4.html'));
+})
+router.get('/videoStreaming5', (req, res) => {
+    // res.end(`this is joe's page`);
+    res.sendFile(path.join(__dirname, '../views/videostreaming5.html'));
+})
 router.use((req, res) => {
     console.log('page does not exist');
     res.sendFile(path.join(__dirname, '../views/404.html'));
@@ -40,7 +58,7 @@ router.use((req, res) => {
 
 //video
   
-router.get("/videoStreaming", function (req, res) {
+router.get("/videos", function (req, res) {
     
     console.log(req.headers);
   
@@ -51,7 +69,7 @@ router.get("/videoStreaming", function (req, res) {
     }
   
     // get video stats (about 11MB)
-    const videoPath = "../video/Arrival.mp4";
+    const videoPath = path.join(__dirname, '../', video.path);
     const videoSize = fs.statSync(videoPath).size;
     console.log(videoSize)
   
