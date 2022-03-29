@@ -1,1 +1,0 @@
-const params = [{id:1, name:Arrival, }]

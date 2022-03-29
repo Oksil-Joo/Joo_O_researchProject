@@ -2,6 +2,7 @@ import express from 'express';
 const router = express.Router();
 
 import path from 'path';
+import axios from 'axios';
 import { fileURLToPath } from 'url';
 
 import fs from 'fs';
@@ -28,29 +29,6 @@ router.get('/videoView', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/videoView.html'));
 })
 
-router.get('/videoStreaming1', (req, res) => {
-    // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming1.html'));
-})
-
-router.get('/videoStreaming2', (req, res) => {
-    // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming2.html'));
-})
-
-router.get('/videoStreaming3', (req, res) => {
-    // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming3.html'));
-})
-
-router.get('/videoStreaming4', (req, res) => {
-    // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming4.html'));
-})
-router.get('/videoStreaming5', (req, res) => {
-    // res.end(`this is joe's page`);
-    res.sendFile(path.join(__dirname, '../views/videostreaming5.html'));
-})
 router.use((req, res) => {
     console.log('page does not exist');
     res.sendFile(path.join(__dirname, '../views/404.html'));
@@ -58,7 +36,7 @@ router.use((req, res) => {
 
 //video
   
-router.get("/videos", function (req, res) {
+router.get("/video", function (req, res) {
     
     console.log(req.headers);
   
@@ -94,6 +72,38 @@ router.get("/videos", function (req, res) {
   
     // Stream the video chunk to the client
     videoStream.pipe(res);
+  });
+
+  router.get("/audio", (req, res) => {
+    axios
+      .get(INPUT, {
+        responseType: "stream",
+        adapter: httpAdapter,
+        "Content-Range": "bytes 16561-8065611",
+      })
+      .then((Response) => {
+        const stream = Response.data;
+  
+        res.set("content-type", "audio/mp3");
+        res.set("accept-ranges", "bytes");
+        res.set("content-length", Response.headers["content-length"]);
+        console.log(Response);
+  
+        stream.on("data", (chunk) => {
+          res.write(chunk);
+        });
+  
+        stream.on("error", (err) => {
+          res.sendStatus(404);
+        });
+  
+        stream.on("end", () => {
+          res.end();
+        });
+      })
+      .catch((Err) => {
+        console.log(Err.message);
+      });
   });
   
 export default router;

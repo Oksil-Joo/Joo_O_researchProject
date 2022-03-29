@@ -14,6 +14,8 @@ Use SAS, Vue, AJAX, databases, and Fetch to create multimedia pages with video a
 
 ## RESEARCH DOCUMENT
 
+*[devDocument] (https://docs.google.com/document/d/1o61LwodoTk6y1nVXecYFvbSJ8Lix1N1g/edit?usp=sharing&ouid=108282132940046187095&rtpof=true&sd=true)
+*[DesDocument](https://docs.google.com/document/d/154_Ygu9QdApDUKTfSELv67SUx4CqhgXt/edit?usp=sharing&ouid=108282132940046187095&rtpof=true&sd=true)
 ## MIT Lisense
 
 Copyright (c) 2021 Oksil-Joo
